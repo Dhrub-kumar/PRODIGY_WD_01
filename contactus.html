@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sarva Shiksha Abhiyaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-photo/personal-accessories-coffee-cup-earphone-eyeglasses-keyboard-black-background_23-2148052543.jpg'); /* Update the path to your image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+         header {
+            background: rgba(50, 50, 59, 1.1); /* Semi-transparent background */
+            color: green;
+            padding: 1px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(68, 68, 68, 1.1); /* Semi-transparent background */
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            color: #28a745;
+            background: rgba(85, 85, 85, 0.8); /* Semi-transparent hover effect */
+        }
+        .container {
+            max-width: 800px;
+            margin: 25px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            text-align: center;
+        }
+        .about, .contact {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin: 5px 2px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Us & Contact Us</h1>
+</header>
+
+<nav>
+    <a href="./SarvaShikshaAbhiyaan.html">Home</a>
+    <a href=".\branch.html">Branch</a>
+    <a href=".\applyforleave.html">Apply for Leave</a>
+    <a href=".\contactus.html">About Us</a>
+    <a href=".\signupfprm.html">Signup/Login</a>
+    <a href=".\newupdate.html">New Updates</a>
+</nav>
+
+<div class="container">
+    <div class="about">
+        <h2>About Us</h2>
+        <p>Sarva Shiksha Abhiyaan is a comprehensive initiative aimed at improving the quality of education in schools across the country. Our mission is to ensure that every child has access to quality education and that teachers are supported in their roles. We provide various resources and management tools to help teachers excel in their profession.</p>
+        <p>Our vision is to create a nurturing environment where teachers can thrive, students can learn, and education can flourish. We believe in the power of education to transform lives and communities.</p>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</div>
+<script src="./script.js" defer></script>
+</body>
+</html>
